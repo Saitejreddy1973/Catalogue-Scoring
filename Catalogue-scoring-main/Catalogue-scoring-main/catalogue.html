@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap-grid.min.css" >
+    <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="cat.css" >
+    </head>
+    <body>
+
+  
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src ="brand1.png" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="catalogue.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu">
+                <table><tr><td>
+                  <a class="dropdown-item" href="cata-furniture.html">Furniture</a>
+                  <a class="dropdown-item" href="cata-clothing.html">Clothing</a>
+                  <a class="dropdown-item" href="cata-smartphones.html">Smartphones</a>
+              </td>
+          <td>  <a class="dropdown-item" href="cata-toys.html">Toys</a>
+              <a class="dropdown-item" href="cata-books.html">Books</a>
+              <a class="dropdown-item" href="cata-food.html"><s>Food</s></a></td>
+              
+           
+                 </tr></table>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="cata-about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cata-FAQs.html">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      
+      <div class="">
+        <div class="jumbopic1 jumbotron">
+        <h1 class="display-4"><span><b>WANT TO ADVERTISE YOUR NEXT PRODUCT?</b></span></h1>
+        <p class="lead"><span><b>But hold on, are you sure you got all the details correct?</b></span></p>
+        <hr class="my-4">
+        <p class="para-1"><span><b>Well then, if you are not so sure, we are here for you!</b></span></p>
+        <button id="qscbut" onclick=disp()>Start a quick scan</button>
+      </div>
+      <div id="cont1">
+        <div class="card card-form" style="width: 70vw;"> 
+          <div class="card-body" id="displaynone">
+            <form  onsubmit="calc(); return false" >
+              <h2>Product details <button onclick=hide() id="cancebut" style="border-width:0px;background-color:none;float: right;">&#10060;</button></h2>
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                      <label for="inputZip">Weight<b style="color: red;">*</b></label>
+                      <input id="fur1" type="text" class="form-control" id="inputZip" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputZip">Price<b style="color: red;">*</b></label>
+                      <input id="fur2" type="text" class="form-control" id="inputZip" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputZip">Brand<b style="color: red;">*</b></label>
+                      <input id="fur3" type="text" class="form-control" id="inputZip" required>
+                    </div>
+
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                      <label for="inputZip">Quantity<b style="color: red;">*</b></label>
+                      <input id="fur4" type="text" class="form-control" id="inputZip" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputZip">Net Quantity</label>
+                      <input id="fur5" type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputZip">Age Range</label>
+                      <input id="fur6" type="text" class="form-control" id="inputZip">
+                    </div>
+
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-4">
+                      <label for="inputZip">Warranty (in years)</label>
+                      <input id="fur7" type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputZip">Material type</label>
+                      <input id="fur8" type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputZip">Water Resistant? (yes/no)</label>
+                      <input id="fur9" type="text" class="form-control" id="inputZip">
+                    </div>
+
+              </div>
+              <hr>
+              <div class="form-group">
+                  <label for="exampleFormControlFile1">Upload atleast 3 pictures (front, top and right hand side view)</label>
+                  <input id="furphoto" type="file" class="form-control-file" id="exampleFormControlFile1" required>
+                </div>
+                <hr>
+              <div class="form-group">
+                <label for="inputAddress">Packer's Address</label>
+                <input type="text" id="fur10" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <input type="reset" style="font-size: medium;"><br><br>
+              <button class="btn btn-primary" style="text-align: center;"  >SUBMIT</button><br>
+            </form>
+            <div id="hidbox">
+  
+            </div><br>
+            <div id="furpr">
+              <div class="progress">
+                <div id="furpr1" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <div class="row">
+        <div class="col-4">
+          <div class="card body" style="width: 22rem;">
+            <img height="275"  src="questionmark.jpg" class="card-img-top" alt="...">
+            <div class="card-boxy">
+              <h5 class="card-title">Do you meet the requirements?</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="cata-about.html" class="btn btn-primary">About Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card body" style="width: 22rem;">
+            <img height="275" src="tickmark.jpg" class="card-img-top" alt="...">
+            <div class="card-boxy">
+              <h5 class="card-title">Find out what is missing</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="cata-FAQs.html" class="btn btn-primary">FAQs</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card body" style="width: 22rem;">
+            <img height="275" src="score.png" class="card-img-top" alt="...">
+            <div class="card-boxy">
+              <h5 class="card-title">Check your score</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Categories</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="text-center text-lg-start bg-body-tertiary text-muted footsy">
+
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+         
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+         
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"><img  height="50px" width = "85px" src="insta-removebg-preview.png"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"><img  height="50px" width = "85px" src="insta-removebg-preview.png"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"><img  height="50px" width = "85px" src="insta-removebg-preview.png"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>QCS
+                </h6>
+                <p>
+                   Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <div class="col-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="catalogue.html" class="text-reset">Home</a>
+                </p>
+                <p>
+                  <a href="cata-about.html" class="text-reset">About US</a>
+                </p>
+                <p>
+                  <a href="cata-FAQs.html" class="text-reset">FAQs</a>
+                </p>
+               
+              </div>
+            
+              <div class="col-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> ABC City, ABC state</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        
+      </footer>
+  
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"> </script>
+    <script src="cata.js"></script>
+    <script src="furniture.js"></script>
+  </body>
+</html>
